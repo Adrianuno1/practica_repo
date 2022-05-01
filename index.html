@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="/style.css">
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="d-flex justify-content-center ">
+      <img src="/img/108-1081861_pokemon-logo-png-free-pic-pokemon-trading-card.png" alt="">
+    </nav>
+
+     <!--INICIAr-->
+    <div class="inicio_conte d-flex justify-content-center mt-5">
+      <button onclick="iniarBatalla()" class="btn_jugar btn btn-outline-dark btn-lg">Iniciar Batalla</button>
+    </div>
+
+    <!--SELECCIONArAr POKEMMON-->
+    <div class="seleccion">
+    <select onchange="obtenerValorSelecc()" class="barraSelect form-select form-select-lg mt-5" aria-label=".form-select-lg example">
+      <option>Elige tu Pokemon</option>
+      <option value="Esquertel">Esqueartel</option>
+      <option value="Ivy">Ivy</option>
+    </select>
+    </div>
+
+    <section class="seccion_batalla">
+
+    <!--Contenido de la batalla-->
+
+    <div class="Contenido_batalla d-none justify-content-between">
+      <div class="pokemonuno">
+        <img id="pika" src="/img/d83e9951f28fc811c1166b16dcaec930_w200.gif" alt="">
+        <div class="info_pokemon">
+          <p class="user_uno">Esquartel</p>
+          <button type="button" class=" vidauno btn btn-dark">100</button>
+          </div>
+          <button onclick="ataqueuno()" type="button" class="btn_ataqueUno btn btn-outline-dark btn-lg mt-3">Atacar</button>
+        </div>
+        <div class="pokemondos">
+          <img class="Ivy" src="/img/8f8f7f4e.gif" alt="">
+          <div class="info_pokemon">
+            <p class="user_dos">Ivy</p>
+          <button type="button" class=" vidados btn btn-dark">100</button>
+            </div>
+            <button onclick="ataqueDos()" type="button" class="btn_ataqueDos btn btn-outline-dark btn-lg mt-3">Atacar</button>
+          </div>
+    </div>
+</section>
+    
+  
+
+
+
+
+
+    <!-- <nav>
+      <img src="/img/poke2.png" alt="">
+    </nav>    
+  <div class="boton_iniciar">
+    <button class="btn_jugar">Jugar</button>
+  </div>
+
+  
+    <section class="cont_eleccion">
+      <h1>Iniciando batalla</h1>
+      <select name="barra_seleccion" id="selec_pokemon" onchange="getSelectedValue();">
+        <option value="0">Elige tu pokemon</option>
+        <option value="esquartel">Esqueartel</option>
+        <option value="Ivy">Ivy</option>
+      </select>
+    </section>  
+
+    <footer class="footer">
+      <div class="pokemonuno">
+        <img class="pika" src="/img/png-clipart-pokemon-pokemon.png" alt="">
+        <div class="info_pokemon">
+          <p class="user_uno">empty</p>
+          <p class="vidauno">100</p>
+          </div>
+          <button class="botonuno">Atacar</button>
+        </div>
+        <div class="pokemondos">
+          <img class="Ivy" src="/img/ivi.png" alt="">
+          <div class="info_pokemon">
+            <p class="user_uno">empty</p>
+            <p class="vidauno">100</p>
+            </div>
+            <button class="botonuno">Atacar</button>
+          </div>
+        
+    </footer>  -->
+
+
+    <script src="java.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  </body>
+</html>
