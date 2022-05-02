@@ -14,6 +14,12 @@ const secc_batalla = document.querySelector(".seccion_batalla");
 
 const imgPokemonUNo = document.querySelector(".pokemonuno img");
 
+const imgPokemonDos = document.querySelector(".pokemondos img");
+
+const pkdosLugar = document.querySelector(".pokemondos");
+
+
+
 
 
 
@@ -58,20 +64,31 @@ vidaDos.textContent = 100;
 
 const esquartel = new pokemon("squartle", 100, 15);
 
-const ivy = new pokemon("pikachu", 100, 15);
+const ivy = new pokemon("Ivy", 100, 15);
 
 
+let turnoUno = 1 
+let turnoDos = 0
 
-function ataqueuno(){
+
+function ataqueuno(callback){
    ivy.vida = ivy.vida - esquartel.ataque;
    vidaDos.textContent = ivy.vida
+   cambiarFndo()
+   pkdosLugar.style.backgroundColor = "red";
+   if(ivy.vida < 1){
+       alert("ganaste " + esquartel.name)
+   }
     
 };
 
 function ataqueDos(callback){
     esquartel.vida = esquartel.vida - ivy.ataque;
     vidaUno.textContent = esquartel.vida;
-    cambiarFndo()
+    cambiarFndodos()
+    if(esquartel.vida < 1){
+        alert("ganaste " + ivy.name)
+    }
 };
 
 
@@ -82,9 +99,22 @@ function cambiarFndo(callback){
         imgPokemonUNo.src = "/img/d83e9951f28fc811c1166b16dcaec930_w200.gif";
         clearInterval(timepo)
     };
+
     
 };
 
+function cambiarFndodos(callback){
+    imgPokemonDos.src = "/img/ivyataque.gif"
+    let tiempo = setInterval(regrar, 2000)
+    function regrar(){
+        imgPokemonDos.src = "/img/8f8f7f4e.gif";
+        clearInterval(tiempo)
+    };
+    
+};
+
+// cambiar color con if en funcion pendiente
+function cambiar
 
 
 
